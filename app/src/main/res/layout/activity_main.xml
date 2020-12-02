@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        app:cardBackgroundColor="#add8e6"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/lougo" />
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Username"
+        android:textColorHint="#797979"
+        app:backgroundTint="#797979" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#797979"
+        app:backgroundTint="#797979" />
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="#b252a1"
+        android:text="Login"
+        android:textColor="#66a1d2" />
+
+</LinearLayout>

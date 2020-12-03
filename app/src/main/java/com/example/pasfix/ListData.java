@@ -1,5 +1,6 @@
 package com.example.pasfix;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,6 +27,7 @@ public class ListData extends AppCompatActivity {
     private DataAdapter adapter;
     private ArrayList<Models> DataArrayList; //kit add kan ke adapter
     private ImageView tambah_data;
+    ProgressDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +43,8 @@ public class ListData extends AppCompatActivity {
 
 
     void addDataOnline(){
+        dialog.setMessage("Tunggu Sabentar yak");
+        dialog.show();
         AndroidNetworking.get("https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League")
                 .setTag("test")
                 .setPriority(Priority.LOW)
